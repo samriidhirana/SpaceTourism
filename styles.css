@@ -12,6 +12,9 @@ table {
   margin-top: 3%;
 }
 
+.div-overflow{
+  overflow: hidden;
+}
 
 
 
