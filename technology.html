@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/assets/favicon-32x32.png">
+
+  <title>Space tourism website | Technology</title>
+</head>
+
+<body>
+
+  <div class="header-tech">
+    <div class="d-none d-sm-none d-md-block">
+      <div class="row nav-cust">
+        <div class="col-1 logo-container">
+          <img class="logo" src="images/assets/shared/logo.svg" alt="logo-img">
+        </div>
+        <div class="col-4 line-container">
+          <div class="line"></div>
+        </div>
+
+        <nav class="col-7 nav-container navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-menu collapse navbar-collapse navbar-nav" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust" aria-current="page" href="index.html"><span class="nav-num">00</span> HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust" href="destination.html"><span class="nav-num">01</span> DESTINATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust" href="crew.html"><span class="nav-num">02</span> CREW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust active" href="technology.html"><span class="nav-num">03</span> TECHNOWLOGY</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="d-block d-lg-none d-md-none d-xl-none navbar-smallscreen">
+
+      <div class="movbile-nav-flex">
+        <div class="logo-container">
+          <img class="logo" src="images/assets/shared/logo.svg" alt="logo-img">
+        </div>
+        <div class="hamburger-menu-container">
+          <span id="open-btn" style="font-size:35px;cursor:pointer;color:white;display:block" onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+
+
+
+      <nav id="mySidenav" class="sidenav">
+        <div class="nav-menu navbar-nav nav-menu-mobile" id="navbarNavAltMarkup">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <a class="nav-link nav-item-cust" aria-current="page" href="index.html"><span class="nav-num">00</span> HOME</a>
+
+          <a class="nav-link nav-item-cust" href="destination.html"><span class="nav-num">01</span> DESTINATION</a>
+
+          <a class="nav-link nav-item-cust" href="crew.html"><span class="nav-num">02</span> CREW</a>
+
+          <a class="nav-link nav-item-cust active-mobile" href="technology.html"><span class="nav-num">03</span> TECHNOWLOGY</a>
+        </div>
+      </nav>
+
+
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark  sidenav">
+
+          <div class="logo-container">
+            <img class="logo" src="images/assets/shared/logo.svg" alt="logo-img">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-menu collapse navbar-collapse navbar-nav" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust" aria-current="page" href="index.html"><span class="nav-num">00</span> HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust" href="destination.html"><span class="nav-num">01</span> DESTINATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust  active" href="crew.html"><span class="nav-num">02</span> CREW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-cust" href="technowlogy.com"><span class="nav-num">03</span> TECHNOWLOGY</a>
+              </li>
+            </ul>
+
+          </div>
+
+      </nav> -->
+
+    </div>
+
+    <div class=" d-md-none d-lg-block d-none">
+      <div class="row destination-moon">
+
+        <div class="col-lg-7 col-md-12 planet-moon" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+          <p class="destination-moon-title"><span class="destination-moon-number">03</span>Space launch 101</p>
+          <div class="tech-content-flex">
+            <div class="buttons-flex">
+              <a id = "cr0" href="#" class="circle-number" onclick="displayTechContent(this.id)">
+                <div id = "ac0" class="cir circle-num1 active-circle">1</div>
+              </a>
+              <a id = "cr1" href="#" class="circle-number" onclick="displayTechContent(this.id)">
+                <div id = "ac1" class="cir circle-num2">2</div>
+              </a>
+              <a id = "cr2" href="#" class="circle-number" onclick="displayTechContent(this.id)">
+                <div id = "ac2" class="cir circle-num3">3</div>
+              </a>
+            </div>
+            <div class="technology-maintext">
+              <p class="const-tech-title">THE TERMINOLOGY…</p>
+              <div id="t0" class="tech-content00">
+                <p class="tech-title">LAUNCH VEHICLE</p>
+                <p class="tech-para">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+                  from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+                   in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+              </div>
+              <div id="t1" class="tech-content01">
+                <p class="tech-title">SPACEPORT</p>
+                <p class="tech-para">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the
+                  seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated
+                  to take advantage of the Earth’s rotation for launch.</p>
+              </div>
+              <div id="t2" class="tech-content02">
+                <p class="tech-title">SPACE CAPSULE</p>
+                <p class="tech-para">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter
+                  the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a
+                  space gym, cinema, and plenty of other activities to keep you entertained.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-5 col-md-12 tech-group" data-aos="fade-up"  data-aos-duration="800" data-aos-easing="ease-in-out">
+          <img id="img0" class="tech-member-00 tech-img" src="images/assets/technology/image-launch-vehicle-portrait.jpg" alt="image-launch-vehicle-landscape">
+          <img id="img2" class="tech-member-01 tech-img" src="images/assets/technology/image-space-capsule-portrait.jpg" alt="image-space-capsule-landscape">
+          <img id="img1" class="tech-member-02 tech-img" src="images/assets/technology/image-spaceport-portrait.jpg" alt="image-spaceport-landscape">
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="d-lg-none d-md-block d-block small-screen-content">
+      <div class="row destination-moon">
+
+        <div class="col-md-12 tech-group" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+          <div class="">
+              <p class="destination-moon-title"><span class="destination-moon-number">03</span>Space launch 101</p>
+          </div>
+          <div class="">
+            <img id="img3" class="tech-member-00 tech-img" src="images/assets/technology/image-launch-vehicle-landscape.jpg" alt="image-launch-vehicle-landscape">
+            <img id="img5" class="tech-member-01 tech-img" src="images/assets/technology/image-space-capsule-landscape.jpg" alt="image-space-capsule-landscape">
+            <img id="img4" class="tech-member-02 tech-img" src="images/assets/technology/image-spaceport-landscape.jpg" alt="image-spaceport-landscape">
+          </div>
+
+
+        </div>
+
+        <div class="col-md-12 planet-moon" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+
+          <div class="tech-content-flex">
+            <div class="buttons-flex">
+              <a id = "cr3" href="#" class="circle-number" onclick="displayTechContent(this.id)">
+                <div id = "ac3" class="cir circle-num1 active-circle">1</div>
+              </a>
+              <a id = "cr4" href="#" class="circle-number" onclick="displayTechContent(this.id)">
+                <div id = "ac4" class="cir circle-num2">2</div>
+              </a>
+              <a id = "cr5" href="#" class="circle-number" onclick="displayTechContent(this.id)">
+                <div id = "ac5" class="cir circle-num3">3</div>
+              </a>
+            </div>
+            <div class="technology-maintext">
+              <p class="const-tech-title">THE TERMINOLOGY…</p>
+              <div id="t3" class="tech-content00">
+                <p class="tech-title">LAUNCH VEHICLE</p>
+                <p class="tech-para">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+                  from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+                   in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+              </div>
+              <div id="t4" class="tech-content01">
+                <p class="tech-title">SPACEPORT</p>
+                <p class="tech-para">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the
+                  seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated
+                  to take advantage of the Earth’s rotation for launch.</p>
+              </div>
+              <div id="t5" class="tech-content02">
+                <p class="tech-title">SPACE CAPSULE</p>
+                <p class="tech-para">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter
+                  the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a
+                  space gym, cinema, and plenty of other activities to keep you entertained.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
